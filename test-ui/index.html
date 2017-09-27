@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prello</title>
+  <link rel="stylesheet" type="text/css" href="./semantic.min.css">
+  <style>
+  .ui.button {
+      border-radius: 18px;
+  }
+
+  .pusher1 {
+      margin-left: 60px;
+  }
+
+  .list {
+      background: rgba(0,0,0,.01);
+      box-shadow: 0 1px 3px 0 #eeeeee, 0 0 0 1px #eeeeee;
+      min-height: 50px;
+  }
+
+  .list .card {
+    cursor: pointer;
+  }
+
+  .ui.grid.list-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  </style>
+</head>
+<body>
+
+<!-- SIDE BAR -->
+<nav class="ui very thin inverted left visible sidebar vertical icon menu">
+  <a class="item">
+    <i class="plus icon"></i>
+  </a>
+  <a class="item">
+    <i class="settings icon"></i>
+  </a>
+</nav>
+<!-- /SIDE BAR -->
+
+<div class="pusher1">
+  <header class="ui menu">
+    <div class="header item">
+      Prello
+    </div>
+    <a class="item">
+      <i class="home icon"></i>
+      Overview
+    </a>
+    <a class="item active">
+      <i class="block layout icon"></i>
+      Boards
+    </a>
+    <a class="item">
+      <i class="users icon"></i>
+      Teams
+    </a>
+    <div class="item">
+      <div class="ui icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+    <div class="right menu">
+      <a class="item">
+        <i class="alarm icon"></i>
+        Notifications
+        <div class="ui red circular label">22</div>
+      </a>
+      <a class="item">
+        <img class="ui avatar image" src="https://semantic-ui.com/images/wireframe/square-image.png">
+      </a>
+    </div>
+  </header>
+
+  <main class="ui container">
+
+    <div class="ui grid">
+      <div class="eight wide column">
+        <h1>AWI - Prello: Option 1 Group 1</h1>
+      </div>
+      <div class="eight wide right aligned column">
+        <button class="ui primary labeled icon button">
+          <i class="plus icon"></i>
+          Add Card
+        </button> 
+        <button class="ui primary labeled icon button">
+          <i class="plus icon"></i>
+          Add column
+        </button> 
+      </div>
+    </div>
+
+    <div class="ui grid list-container">
+      <div class="four wide column">
+        <h2>Backlog (9)</h2>
+        <div class="ui cards list">
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
+              <div class="meta">
+                <a class="ui small green label">Zendesk</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="description">
+                Jenny wants to add you to the group <b>best friends</b>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/matt.jpg">
+              <div class="meta">
+                <a class="ui small violet label">P1</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/matt.jpg">
+              <div class="meta">
+                <a class="ui small teal label">Test</a>
+                <a class="ui small red label">Urgent</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="description">
+                Jenny wants to add you to the group <b>best friends</b>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
+              <div class="meta">
+                <a class="ui small violet label">P1</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
+              <div class="meta">
+                <a class="ui small yellow label">Important</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="description">
+                Jenny wants to add you to the group <b>best friends</b>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/matt.jpg">
+              <div class="meta">
+                <a class="ui small violet label">P1</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+
+      <div class="four wide column">
+        <h2>Todo (2)</h2>
+        <div class="ui cards list">
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/matt.jpg">
+              <div class="meta">
+                <a class="ui small yellow label">Important</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="description">
+                Jenny wants to add you to the group <b>best friends</b>
+              </div>
+            </div>
+            <div class="ui bottom indicating attached progress" data-percent="88">
+                <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="four wide column">
+        <h2>Doing (4)</h2>
+        <div class="ui cards list">
+          <div class="card">
+            <div class="content">
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="meta">
+                <a class="ui small teal label">Test</a>
+                <a class="ui small red label">Urgent</a>
+              </div>
+              <div class="description">
+                Jenny wants to add you to the group <b>best friends</b>
+              </div>
+            </div>
+            <div class="ui bottom indicating attached progress" data-value="41" data-total="200">
+                <div class="bar"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
+              <div class="meta">
+                <a class="ui small violet label">P1</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/matt.jpg">
+              <div class="meta">
+                <a class="ui small violet label">P1</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+            <div class="ui bottom indicating attached progress" data-value="11" data-total="200">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="four wide column">
+        <h2>Done (3)</h2>
+        <div class="ui cards list">
+          <div class="card">
+            <div class="content">
+            <img class="right floated mini ui avatar image" src="https://semantic-ui.com/images/avatar/large/elliot.jpg">
+              <div class="meta">
+                <a class="ui small teal label">Test</a>
+                <a class="ui small red label">Urgent</a>
+              </div>
+              <div class="description">
+                Elliot requested permission to view your contact details
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="description">
+                Jenny wants to add you to the group <b>best friends</b>
+              </div>
+            </div>
+            <div class="ui bottom indicating attached progress" data-value="127" data-total="200">
+                <div class="bar"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="description">
+                Jenny wants to add you to the group <b>best friends</b>
+              </div>
+            </div>
+            <div class="ui bottom indicating attached progress" data-value="200" data-total="200">
+                <div class="bar"></div>
+            </div>
+          </div>          
+        </div>
+      </div>   
+
+    </div>
+  </main>
+
+  <div class="ui modal">
+    <div class="header">
+      Elliot requested permission to view your contact details
+      <button class="ui right floated labeled icon primary button">
+        <i class="right arrow icon"></i>
+        Change column
+      </button>
+    </div>
+    <div class="content scrolling">
+      <div class="ui grid">
+        <div class="twelve wide column">
+        <div class="ui basic segment">
+            <h3>Description</h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar libero ut enim pretium, a ultrices eros ultricies. Fusce viverra elementum lectus laoreet pellentesque. Nullam sagittis bibendum felis et pulvinar. Curabitur sed neque sollicitudin, tempus orci eget, malesuada erat. Cras dignissim turpis eget tortor vestibulum tempor. Phasellus hendrerit quam ac tortor suscipit accumsan. In ut neque bibendum, elementum sapien malesuada, viverra nisi. 
+</div>
+<div class="ui basic segment">
+  <h3>Tasks (5)</h3>
+  <div class="ui indicating progress" data-percent="40">
+  <div class="bar"></div>
+  <div class="label">40% Done</div>
+</div>
+  <div class="ui form">
+    <div class="inline field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden" checked>
+      <label>Tasks 1</label>
+    </div>
+    </div>
+      <div class="inline field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>Checkbox</label>
+    </div>
+    </div>
+      <div class="inline field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden" checked>
+      <label>Tasks 5</label>
+    </div>
+    </div>
+          <div class="inline field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>Tasks 5</label>
+    </div>
+    </div>
+          <div class="inline field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>Tasks 5</label>
+    </div>
+    </div>
+
+    <div class="ui transparent input">
+  <input type="text" placeholder="Add task...">
+</div>
+
+</div>
+</div>
+<div class="ui basic segment">
+
+  <h3>Comments (3)</h3>
+    <form class="ui reply form">
+    <div class="field">
+      <textarea rows="2"></textarea>
+    </div>
+    <div class="ui blue labeled submit icon button">
+      <i class="icon edit"></i> Add Reply
+    </div>
+  </form>
+  <div class="ui minimal comments">
+  <div class="comment">
+    <a class="avatar">
+      <img src="https://semantic-ui.com/images/avatar/small/matt.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Matt</a>
+      <div class="metadata">
+        <span class="date">Today at 5:42PM</span>
+      </div>
+      <div class="text">
+        How artistic!
+      </div>
+    </div>
+  </div>
+  <div class="comment">
+    <a class="avatar">
+      <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Elliot Fu</a>
+      <div class="metadata">
+        <span class="date">Yesterday at 12:30AM</span>
+      </div>
+      <div class="text">
+        <p>This has been very useful for my research. Thanks as well!</p>
+      </div>
+    </div>
+  </div>
+  <div class="comment">
+    <a class="avatar">
+      <img src="https://semantic-ui.com/images/avatar/small/joe.jpg">
+    </a>
+    <div class="content">
+      <a class="author">Joe Henderson</a>
+      <div class="metadata">
+        <span class="date">5 days ago</span>
+      </div>
+      <div class="text">
+        Dude, this is awesome. Thanks so much
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+        <div class="four wide column">
+        <div class="ui basic segment">
+          <h3>Assignee(s)</h3>
+<div class="ui left icon input">
+  <input type="text" placeholder="Add users...">
+  <i class="users icon"></i>
+</div>
+        <p style="margin-top:15px">
+          <img class="ui avatar image" src="https://semantic-ui.com/images/avatar/small/matt.jpg">
+        </p>
+          
+</div>
+<div class="ui basic segment">
+
+          <h3>Label(s)</h3>
+
+          <div class="ui left icon input">
+  <input type="text" placeholder="Add label...">
+  <i class="tag icon"></i>
+</div>
+        <p style="margin-top:15px">
+          <a class="ui small yellow label">Important</a>
+          <a class="ui small teal label">Test</a>
+        </p>
+
+
+        </div>
+</div>
+
+
+        </div>
+    </div>
+</div> <!-- End main -->
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="./semantic.min.js"></script>
+<script>
+$('.progress').progress();
+
+$('.card').on('click', () => {
+  $('.modal').modal('show');
+});
+</script>
+</body>
+</html>
